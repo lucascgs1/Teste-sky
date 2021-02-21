@@ -1,23 +1,80 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <title>Assista Filmes e Séries em Qualquer Lugar | Sky Play</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="imagem/png" href="assets/images/favicon.ico" />
+
+    <!-- bibliotecas-->
+    <link rel="stylesheet" href="assets/lib/bootstrap-4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/lib/FlexSlider/css/flexslider.css" type="text/css" media="screen" />
+
+    <script src="assets/lib/jquery.min.js"></script>
+    <script src="assets/lib/popper.min.js"></script>
+    <script src="assets/lib/bootstrap-4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- css personalizado -->
+    <link rel="stylesheet" href="assets/css/main.css" />
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo-sky.svg" alt="logo" style="width: 40px" />
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                pokemones
+                <!-- Place somewhere in the <body> of your page -->
+                <div class="flexslider carousel">
+                    <ul class="slides">
+                        <li>
+                            <img src="assets/lib/FlexSlider/images/kitchen_adventurer_caramel.jpg" />
+                        </li>
+                        <li>
+                            <img src="assets/lib/FlexSlider/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+                        </li>
+                        <li>
+                            <img src="assets/lib/FlexSlider/images/kitchen_adventurer_donut.jpg" />
+                        </li>
+                        <li>
+                            <img onclick="alert('pokemones')"
+                                 class="teste"
+                                 src="assets/lib/FlexSlider/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+                        </li>
+                        <!-- items mirrored twice, total of 12 -->
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+
+    <style>
+        .teste :a {
+            cursor: pointer;
+        }
+    </style>
+
+    <!-- scripts -->
+    <script src="assets/js/main.js"></script>
+    <script defer
+            src="assets/lib/FlexSlider/js/jquery.flexslider-min.js"></script>
 </body>
 </html>
