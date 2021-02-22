@@ -34,7 +34,7 @@ function gerarCarousel(lista) {
                 '</div>';
             console.log(lista[i].type);
             console.log(conteudo);
-            $(".container-fluid").append(conteudo);
+            $("#main").append(conteudo);
 
             if (lista[i].movies != null)
                 lista[i].items = lista[i].movies;
@@ -46,7 +46,6 @@ function gerarCarousel(lista) {
                         '<span class="icon-shop"><i class="fas fa-shopping-cart"></i></span>' +
                         '</li>';
 
-                    console.log(slide)
                     $('#' + lista[i].type + '-slides').append(slide);
                 }
         }
@@ -59,6 +58,8 @@ function gerarCarousel(lista) {
         itemMargin: 2,
         controlNav: false,
         directionNav: true,
+        slideshow: false,
+        slideshowSpeed: 3500,
     });
 
     $('.carousel-portrait').flexslider({
@@ -68,6 +69,7 @@ function gerarCarousel(lista) {
         itemMargin: 2,
         controlNav: false,
         directionNav: true,
+        slideshow: false,
         // rtl: true
     });
 
