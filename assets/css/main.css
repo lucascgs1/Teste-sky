@@ -3,7 +3,38 @@
 body {
     background-color: #fafaff;
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.38;
 }
+
+.divider {
+    height: 1px;
+    background-color: #d9d9e0;
+    width: 100%;
+}
+
+.header-sky {
+    background-color: #f1f2fa;
+}
+
+    .header-sky .navbar-brand img {
+        height: auto;
+        width: 21%;
+    }
+
+    .header-sky .navbar-nav .nav-item {
+        margin-right: 13%;
+    }
+
+        .header-sky .navbar-nav .nav-item .nav-link {
+            background-color: #fafaff;
+            border-radius: 1em;
+            padding: 4px 7px;
+            width: 29px;
+            color: #646466;
+        }
+
+
 
 #highlights {
     margin-top: 2em;
@@ -20,6 +51,16 @@ body {
 }
 
 
+.carousel-portrait.carousel ul.flex-direction-nav a {
+    height: 50px;
+}
+
+.carousel-portrait.carousel ul.flex-direction-nav .flex-nav-prev,
+.carousel-portrait.carousel ul.flex-direction-nav .flex-nav-next {
+    position: unset;
+}
+
+
 .icon-shop {
     border: 3px solid #fff;
     border-radius: 3em;
@@ -29,4 +70,200 @@ body {
     position: absolute;
     right: 0.75em;
     top: 0.5em;
+}
+
+.flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+}
+
+.flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+}
+
+
+
+/*rodape*/
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    /* height: 60px; */
+    /* Vertically center the text there */
+    /* line-height: 60px; */
+    background-color: #f1f2fa;
+    color: #606064;
+}
+
+
+    .footer .logo-social-media {
+        /*border: 1px solid #d9d9e0;*/
+        border-left: 0px;
+        border-right: 0px;
+        padding: 1% 2%;
+    }
+
+        .footer .logo-social-media .logo {
+            background-repeat: no-repeat;
+            background-image: url(../images/sky-light-default.svg);
+            background-position: center center;
+            width: 84px;
+            height: 32px;
+        }
+
+        .footer .logo-social-media .icones-social-media {
+            text-align: right;
+            font-size: 1.27em;
+            padding-top: 0.5%;
+        }
+
+            .footer .logo-social-media .icones-social-media i {
+                padding-left: 2.5%;
+            }
+
+
+    .footer .logos-app-store {
+        margin-bottom: 36px;
+        margin-top: 36px;
+    }
+
+        .footer .logos-app-store .link-minha-sky {
+            display: inline-block;
+            border-radius: 11px;
+        }
+
+        .footer .logos-app-store a {
+            margin: 10px;
+        }
+
+        .footer .logos-app-store .link-minha-sky .img-minha-sky {
+            width: 48px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .footer .logos-app-store .link-minha-sky .text-download {
+            float: left;
+            width: 70%;
+            margin-top: 4px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+
+        .footer .logos-app-store .logo-store {
+            margin-left: 50px;
+        }
+
+            .footer .logos-app-store .logo-store .logo_apple_store {
+                background-image: url(../images/button-apple-store-light-default.svg);
+                background-repeat: no-repeat;
+                background-size: 160px 54px;
+                width: 160px;
+                height: 54px;
+                text-indent: -1000em;
+                display: inline-block;
+            }
+
+                .footer .logos-app-store .logo-store .logo_apple_store:hover {
+                    background-image: url(../images/button-apple-store-light-over.svg);
+                }
+
+            .footer .logos-app-store .logo-store .logo_play_store {
+                background-image: url(../images/button-google-play-light-default.svg);
+                background-repeat: no-repeat;
+                background-size: 160px 54px;
+                width: 160px;
+                height: 54px;
+                text-indent: -1000em;
+                display: inline-block;
+            }
+
+                .footer .logos-app-store .logo-store .logo_play_store:hover {
+                    background-image: url(../images/button-google-play-light-over.svg);
+                }
+
+    .footer .footer-links {
+        margin: 20px 0;
+    }
+
+        .footer .footer-links ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+            .footer .footer-links ul li .titulo {
+                padding: 16px 16px 16px 1px;
+                position: relative;
+                background-color: rgba(0, 0, 0, 0);
+                border: none;
+                display: block;
+                width: 100%;
+                text-align: left;
+                color: rgba(0, 0, 0, 0.38);
+                font-weight: bold;
+            }
+
+                .footer .footer-links ul li .titulo.titulo-outros {
+                    padding: 16px 16px 16px 1px;
+                    position: relative;
+                    background-color: rgba(0, 0, 0, 0);
+                    border: none;
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                    font-weight: bold;
+                    color: rgba(0, 0, 0, 0.6);
+                }
+
+
+            .footer .footer-links ul li a {
+                color: rgba(0, 0, 0, 0.87);
+                font-size: 0.875rem;
+                font-weight: normal;
+                line-height: 1.875rem;
+            }
+
+    .footer .links-main {
+        background-color: #fff;
+        padding: 0.7%;
+    }
+
+        .footer .links-main a {
+            color: rgba(0, 0, 0, 0.87);
+        }
+
+            .footer .links-main a:hover {
+                color: #DB524F;
+                text-decoration: none;
+            }
+
+    .footer .copyright {
+        font-family: "Roboto";
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 1.43;
+        color: rgba(0, 0, 0, 0.6);
+        margin: 0 0 10px;
+        padding: 0 3.5%;
+    }
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
 }
