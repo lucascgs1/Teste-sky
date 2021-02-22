@@ -1,4 +1,32 @@
-﻿body {
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
     background-color: #fafaff;
-    
+    font-family: 'Roboto', sans-serif;
+}
+
+#highlights {
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+#carousel-portrait {
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.carousel-portrait.carousel ul li {
+    position: relative;
+}
+
+
+.icon-shop {
+    border: 3px solid #fff;
+    border-radius: 3em;
+    padding: 2% 3%;
+    color: #fff;
+    background-color: #000000bf;
+    position: absolute;
+    right: 0.75em;
+    top: 0.5em;
 }
